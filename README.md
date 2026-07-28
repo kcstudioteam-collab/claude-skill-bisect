@@ -36,14 +36,20 @@ Zero dependencies — Python 3 standard library and bash.
 
 ## Install
 
-Part of the **evidence** plugin by LKC:
+Either the whole **evidence** plugin, which is all four skills:
 
 ```
 /plugin marketplace add lkc-studio/claude-plugins
 /plugin install evidence@lkc-plugins
 ```
 
-Then start a new session and ask something like *"this test started failing sometime last week, find out which commit did it"*.
+Or this skill on its own:
+
+```bash
+git clone https://github.com/lkc-studio/claude-skill-bisect.git ~/.claude/skills/bisect
+```
+
+Then start a new session and ask something like *"this test started failing sometime last week — find out which commit did it"*
 
 ## Use the tools directly
 
